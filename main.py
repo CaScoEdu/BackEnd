@@ -42,7 +42,7 @@ def get_db():
         db.close()
 
 
-# --- POPOLAMENTO INIZIALE (MOCK) ---
+# --- POPOLAMENTO INIZIALE () ---
 # Inserisce delle pizze di partenza se il database è completamente vuoto
 def popola_database_iniziale():
     db = SessionLocal()
