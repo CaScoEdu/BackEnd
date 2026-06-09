@@ -39,7 +39,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Gestore dell'evento di avvio dell'applicazione
+# Gestore dell'evento di avvio dell'applicazione 
 @app.on_event("startup")
 def on_startup():
     create_db_and_tables()
