@@ -33,7 +33,7 @@ app = FastAPI(title="Pizzeria REST API - Supabase Edition", version="1.0.0")
 # Abilitazione fondamentale del CORS per permettere al tuo Frontend React di comunicare con FastAPI
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In produzione sostituisci con l'URL reale del tuo frontend React
+    allow_origins=["https://front-end-react-modulare-pizze-jtqudkrru-cascoedus-projects.vercel.app/"],  # In produzione sostituisci con l'URL reale del tuo frontend React
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
