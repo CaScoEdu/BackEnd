@@ -72,7 +72,7 @@ def create_pizza(pizza_in: PizzaCreate):
 def update_pizza(pizza_id: int, pizza_in: PizzaCreate):
     for index, pizza in enumerate(db_pizze):
         if pizza.id == pizza_id:
-            updated_pizza = Pizza(id=pizza_id, **pizza_in.dict())
+            updated_pizza = Pizza(id=pizza_id, **pizza_in.model_dump())
             db_pizze[index] = updated_pizza
             return updated_pizza
     raise HTTPException(status_code=404, detail="Pizza non trovata")
