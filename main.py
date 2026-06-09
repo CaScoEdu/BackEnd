@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 from typing import List
 
 # Importazioni per SQLAlchemy
-from sqlalchemy import create_index, create_engine, Column, Integer, String, Float
+from sqlalchemy import create_engine, Column, Integer, String, Float
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, Session
 
